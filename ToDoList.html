@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="ToDoList.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="_Container">
+      <div class="_SubContainer">
+        <div class="_ContainerPobup" id="pobup">
+          <div class="_Card" id="card">
+            <div class="_Text">
+              <h2>Hello There!</h2>
+              <p>Add New Task</p>
+            </div>
+            <div class="_Text">
+              <form>
+                <div class="_Data">
+                  <input
+                    type="text"
+                    name="title"
+                    placeholder="Title"
+                    id="TitleOfTask"
+                  />
+                  <input
+                    type="text"
+                    name="Disc"
+                    placeholder="Discription"
+                    id="DiscriptionOfTask"
+                  />
+                </div>
+              </form>
+            </div>
+            <div class="_Btn">
+              <button id="cloase"><span>Add</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="_SectionOne">
+          <div class="_Logo">
+            <h1>ToDo</h1>
+          </div>
+          <div class="_List">
+            <span class="_Image"
+              ><img src="images/icons8-apps-48.png" alt="icon apps"
+            /></span>
+            <span class="_Link">
+              <p>Dashboard</p>
+            </span>
+          </div>
+        </div>
+        <div class="_SectionTwo">
+          <div class="_One">
+            <div class="_Header">
+              <img src="images/task-svgrepo-com.svg" alt="" />
+              <img src="images/arrow-right-svgrepo-com.svg" alt="iconArrow" />
+              <span>Dashboard</span>
+            </div>
+          </div>
+          <div class="_Two">
+            <div class="_UserCreate">
+              <div class="_MyTodo">
+                <h3>My Todo</h3>
+              </div>
+              <div class="_UserIcon">
+                <button id="Target">
+                  <img
+                    src="images/plus-circle-svgrepo-com (1).svg"
+                    alt="plus icon"
+                  /><span>New Task</span>
+                </button>
+                <div class="_UserImage">
+                  <img src="images/icons8-person-48.png" alt="plus icon" />
+                </div>
+              </div>
+            </div>
+            <div class="_SearchFilteration">
+              <form>
+                <div class="_Search">
+                  <button id="Search">search</button>
+                </div>
+                <div class="_Date">
+                  <div class="_Search">
+                    <button id="SearchByDate" type="button">
+                      Search by Date
+                    </button>
+                  </div>
+                  <input
+                    type="date"
+                    name="FromData"
+                    placeholder="From"
+                    id="FromData"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="_Three">
+            <div class="_UserCreate _Midea" id="DataTasks"></div>
+          </div>
+          <div class="_PageSizes"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="ToDoList.js"></script>
+  </body>
+</html>

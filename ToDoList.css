@@ -1,0 +1,643 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --Main-Color: #202d48;
+  --White-color: #ffffff;
+  --Secound-color: #c4d0eb;
+  --third-color: #f2f6ff;
+  --fourth-color: rgba(120, 132, 158, 0.596);
+  --five-color: #9d9d9f;
+  --black-color: #000;
+
+}
+
+._Container {
+  position: relative;
+  width: 100%;
+  background-color: var(--Main-Color);
+}
+
+._SubContainer {
+  width: 100%;
+  background-color: var(--Main-Color);
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: left;
+}
+
+._SubContainer ._SectionOne {
+  width: 20%;
+  background-color: var(--Main-Color);
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 20px;
+}
+
+._SubContainer ._SectionOne ._Logo {
+  width: 100%;
+}
+
+._SubContainer ._SectionOne ._Logo h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--White-color);
+  line-height: 3rem;
+}
+
+._SubContainer ._SectionOne ._List {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  gap: 5px;
+  border-radius: 0.4rem;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
+  padding: 3px 15px;
+  background-color: var(--fourth-color);
+}
+
+._SubContainer ._SectionOne .clicable {
+  cursor: pointer;
+}
+
+._SubContainer ._SectionOne ._List ._Image {
+  width: 25px;
+  height: 25px;
+}
+
+._SubContainer ._SectionOne ._List ._Image img {
+  width: 25px;
+  height: 25px;
+}
+
+._SubContainer ._SectionOne ._List ._Link p {
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+  color: var(--White-color);
+  line-height: 2.5rem;
+}
+
+/* -------------------------------------------------------------------------- */
+._SubContainer ._SectionTwo {
+  width: 79%;
+  min-height: 100vh;
+  background-color: var(--White-color);
+  position: relative;
+  top: 0px;
+  left: 20%;
+  margin: 1rem 0px;
+  border-radius: 0.4rem;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
+}
+
+._SubContainer ._SectionTwo ._One {
+  padding: 2rem 2rem;
+}
+
+._SubContainer ._SectionTwo ._One ._Header {
+  border-bottom: 2px solid var(--five-color);
+  width: 100%;
+  padding: 10px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  gap: 0.5rem;
+}
+
+._SubContainer ._SectionTwo ._One ._Header img {
+  width: 1.5rem;
+}
+
+._SubContainer ._SectionTwo ._One ._Header span {
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+  line-height: 2rem;
+  color: var(--five-color);
+}
+
+._SubContainer ._SectionTwo ._Two {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+._SubContainer ._SectionTwo ._Two ._UserCreate {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+._SubContainer ._SectionTwo ._Two ._UserCreate ._MyTodo {
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 2rem;
+}
+
+._SubContainer ._SectionTwo ._Two ._UserCreate ._MyTodo h3 {
+  color: var(--black-color);
+}
+
+._SubContainer ._SectionTwo ._Two ._UserCreate ._UserIcon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+._SubContainer ._SectionTwo ._Two ._UserCreate ._UserIcon button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.6rem;
+  background-color: var(--Main-Color);
+  border-radius: 0.4rem;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+._SubContainer ._SectionTwo ._Two ._UserCreate ._UserIcon button img {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+._SubContainer ._SectionTwo ._Two ._UserCreate ._UserIcon button span {
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+
+  text-transform: capitalize;
+  color: var(--White-color);
+  text-align: center;
+}
+
+._SubContainer ._SectionTwo ._Two ._UserCreate ._UserIcon ._UserImage {
+  width: 45px;
+  height: 45px;
+  border: 2px solid var(--five-color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+._SubContainer ._SectionTwo ._Two ._UserCreate ._UserIcon ._UserImage img {
+  width: 35px;
+  height: 35px;
+}
+
+._SubContainer ._SectionTwo ._Two ._SearchFilteration {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+._SubContainer ._SectionTwo ._Two ._SearchFilteration ._Date {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+._SubContainer ._SectionTwo ._Two ._SearchFilteration form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+._SubContainer ._SectionTwo ._Two ._SearchFilteration form input,
+._ContainerPobup ._Card ._Text form input,
+._SubContainer ._SectionTwo ._Two ._SearchFilteration form button,
+.SaveInp {
+  background-color: var(--White-color);
+  border: 2px solid var(--five-color);
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 13rem;
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
+  outline: none;
+  text-align: left;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+
+._SubContainer ._SectionTwo ._Two ._SearchFilteration form button {
+  cursor: pointer;
+  text-transform: capitalize;
+  font-weight: 500;
+  text-align: center;
+
+}
+
+._SubContainer ._SectionTwo ._Two ._SearchFilteration form button:hover {
+  background-color: var(--Main-Color);
+  border: 2px solid var(--Main-Color);
+  color: var(--White-color);
+}
+
+._SubContainer ._SectionTwo ._Two ._SearchFilteration form input:focus {
+  background-color: var(--White-color);
+  border: 2px solid var(--Secound-color);
+}
+
+/* -------------------------------------------------------------------------- */
+._SubContainer ._SectionTwo ._Three {
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+._SubContainer ._SectionTwo ._Three ._Midea {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+._SubContainer ._SectionTwo ._Three ._Midea ._OneTask {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  width: 20rem;
+  border: 2px solid var(--five-color);
+  height: 40vh;
+  padding: 1rem 1rem;
+  border-radius: 0.8rem;
+  -webkit-border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  -ms-border-radius: 0.8rem;
+  -o-border-radius: 0.8rem;
+
+}
+
+._SubContainer ._SectionTwo ._Three ._Midea ._OneTask ._Number {
+
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  border: 2px solid var(--five-color);
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.4rem;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
+}
+
+._SubContainer ._SectionTwo ._Three ._Midea ._OneTask ._Number span {
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+._SubContainer ._SectionTwo ._Three ._Midea ._OneTask ._Title-disc {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0rem;
+  justify-content: space-between;
+  width: 100%;
+  height: 70%;
+}
+
+._SubContainer ._SectionTwo ._Three ._Midea ._OneTask ._Title-disc h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: var(--Main-Color);
+}
+
+._SubContainer ._SectionTwo ._Three ._Midea ._OneTask ._Title-disc p {
+  font-size: 0.9rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: var(--Main-Color);
+}
+
+._SubContainer ._SectionTwo ._Three ._Midea ._OneTask ._Action {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+}
+
+._SubContainer ._SectionTwo ._Three ._Midea ._OneTask ._Action button,
+._ContainerPobup ._Card ._Btn button {
+  background-color: var(--Main-Color);
+  border: 2px solid var(--Main-Color);
+  border-radius: 0.4rem;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: Graphik, -apple-system, system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  line-height: 1.15;
+  padding: 0.6rem 1rem;
+  position: relative;
+  text-align: center;
+  text-transform: capitalize;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+
+._SubContainer ._SectionTwo ._Three ._Midea ._OneTask ._Action button {
+  width: 30%;
+}
+
+._SubContainer ._SectionTwo ._Three ._Midea ._OneTask ._Action button:disabled {
+  opacity: 0.5;
+}
+
+._SubContainer ._SectionTwo ._Three ._Midea ._OneTask ._Action button:hover,
+._ContainerPobup ._Card ._Btn button:hover {
+  background-color: var(--White-color);
+  color: #000;
+  border: 2px solid var(--Main-Color);
+
+}
+
+._SubContainer ._SectionTwo ._Three ._Midea ._OneTask .check {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.4rem;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
+}
+
+/* ---------------------------------- pobup --------------------------------- */
+
+._ContainerPobup {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.301);
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  display: none;
+  z-index: 100000;
+}
+
+._ContainerPobup ._Card {
+  width: 50%;
+  height: 55vh;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  gap: 10px;
+}
+
+._ContainerPobup ._Card ._Text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+._ContainerPobup ._Card ._Text h2 {
+  position: relative;
+  max-width: 100%;
+  margin: 0;
+  padding: 0.8em 1em 0;
+  color: inherit;
+  font-size: 1.875em;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  text-transform: capitalize;
+  word-wrap: break-word;
+  cursor: initial;
+}
+
+._ContainerPobup ._Card ._Text p {
+  margin: 0;
+  padding: 1em 1.6em 0.3em;
+  overflow: auto;
+  color: inherit;
+  font-size: 1.125em;
+  font-weight: normal;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: normal;
+  text-align: center;
+  word-wrap: break-word;
+  word-break: break-word;
+  cursor: initial;
+}
+
+._ContainerPobup ._Card ._Text form ._Data {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+._ContainerPobup ._Card ._Text form {
+  width: 100%
+}
+
+._ContainerPobup ._Card ._Text form input {
+  width: 100%
+}
+
+@media only screen and (max-width: 500px) {
+
+  ._SubContainer ._SectionTwo ._Two ._SearchFilteration form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+    gap: 20px;
+  }
+
+  ._SubContainer ._SectionTwo ._Two ._SearchFilteration ._Date {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  ._ContainerPobup ._Card {
+    width: 100%;
+  }
+
+  ._SubContainer {
+    align-items: center;
+    justify-content: center;
+  }
+
+  ._SubContainer ._SectionOne {
+    display: none;
+  }
+
+  ._SubContainer ._SectionTwo {
+    width: 90%;
+    top: 0%;
+    left: 0%;
+  }
+
+  ._SubContainer ._SectionTwo ._One {
+    padding: 1.5rem 1.5rem;
+  }
+
+  ._SubContainer ._SectionTwo ._Two {
+    padding: 0rem 1.5rem;
+    gap: 15px;
+  }
+
+  ._SubContainer ._SectionTwo ._Two ._UserCreate {
+    flex-direction: column;
+    align-items: start;
+    justify-content: left;
+    gap: 10px;
+  }
+
+  ._SubContainer ._SectionTwo ._Three ._Midea ._OneTask {
+    width: 100%;
+  }
+
+  ._SubContainer ._SectionTwo ._Three ._Midea ._OneTask ._Action button {
+    font-size: 1rem;
+    line-height: 1.15;
+    padding: 0.6rem 1rem;
+    width: 7rem;
+  }
+
+  ._SubContainer ._SectionTwo ._Two ._UserCreate ._MyTodo {
+    font-size: 1.3rem;
+  }
+
+  ._SubContainer ._SectionTwo ._Two ._UserCreate ._UserIcon {
+    justify-content: space-between;
+    gap: 15px;
+    width: 100%;
+  }
+
+  ._SubContainer ._SectionTwo ._Two ._SearchFilteration form input,
+  ._SubContainer ._SectionTwo ._Two ._SearchFilteration form button {
+    width: 2.5rem;
+  }
+
+  ._SubContainer ._SectionTwo ._Two ._SearchFilteration form button {
+    width: 10rem;
+  }
+
+  #ToData {
+    display: none;
+  }
+
+}
+
+/* ----------------------------- hidden buttons ----------------------------- */
+
+.hidden {
+  display: none;
+}
